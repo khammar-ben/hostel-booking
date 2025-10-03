@@ -19,7 +19,14 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:8080', 'http://127.0.0.1:8080'], // your React app origin
+    'allowed_origins' => [
+        'http://localhost:3000', 
+        'http://127.0.0.1:3000', 
+        'http://localhost:8080', 
+        'http://127.0.0.1:8080',
+        'https://your-netlify-app.netlify.app', // Aggiungi il tuo dominio Netlify
+        'https://*.netlify.app' // Permetti tutti i domini Netlify
+    ],
 
     'allowed_origins_patterns' => [],
 
